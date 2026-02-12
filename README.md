@@ -28,10 +28,11 @@ periodic refresh (setInterval) to make expired snoozes reappear
 
 ## How to Run
 
+Prerequisite: Jac CLI is installed.
+
 1. Go to project folder:
    ```bash
    cd /home/lwhelton/eecs449/my-todo
-
 
 2. export GOOGLE_API_KEY="your_key_here"
 

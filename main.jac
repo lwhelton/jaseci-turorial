@@ -101,7 +101,7 @@ def:pub delete_todo(id: str) -> dict {
     return {};
 }
 
-cl def:pub app -> any {
+cl def:pub app -> object {
     has items: list = [],
         text: str = "";
 
@@ -111,7 +111,7 @@ cl def:pub app -> any {
 
     async can with entry {
         await refresh();
-        setInterval(lambda -> None { refresh(); }, 30000);
+        setInterval(lambda -> None { refresh(); }, 5000);
     }
 
     async def add -> None {
